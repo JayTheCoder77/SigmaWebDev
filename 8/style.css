@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+}
+p{
+    background-color: aqua;
+    color: white;
+}
+a{
+    background-color: rgb(50, 22, 117);
+    color: white;
+}
+div{
+    background-color: rgb(38, 117, 22);
+    color: white;
+}
+span{
+    background-color: rgb(117, 22, 104);
+    color: white;
+}
