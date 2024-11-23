@@ -1,0 +1,31 @@
+*{
+    /* universal selector */
+    margin: 0px;
+    padding: 0px;
+}
+.red{
+    background-color: red;
+}
+#yellow{
+    background-color: yellow;
+}
+div p{
+    color: aqua;
+}
+
+/* pseudo selector */
+a:visited {
+    color: red;
+}
+a:link{
+    color: greenyellow;
+}
+a:active{
+    background-color: blue;
+}
+
+
+/* /////////////////// */
+p:first-child{
+    background-color: blue;
+}
