@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS VARIABLES</title>
+    <style>
+        :root{
+            --color:blue;
+            --setcolor:rgb(64, 64, 106);
+            --defpad:230px;
+        }
+        .nav{
+            /* background-color: aqua; */
+            background-color: var(--color);
+        }
+        .container{
+            background-color: var(--setcolor);
+
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            padding: var(--defpad);
+        }
+        ul li:first-child{
+            --color:yellowgreen;
+            background-color: var(--color);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, ullam. Minima adipisci provident excepturi totam molestiae facere similique quidem vero nisi eligendi voluptatem accusantium quam nihil asperiores fugiat, deserunt perspiciatis temporibus corrupti magnam? Dolor illum ratione quod incidunt quas sint repellat voluptates. Cum, dolorum vero?
+    </div>
+</body>
+</html>
