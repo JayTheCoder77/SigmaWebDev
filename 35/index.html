@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        }
+        .boxes *{
+            border : 2px solid violet;
+        }
+        p,[data-color="primary"]{
+            background-color: yellow;
+        } */
+         /* .box:nth-child(even){
+            background-color: blue;
+         }
+         .box:nth-child(odd){
+            background-color: rgb(0, 0, 0);
+         } */
+          .box:nth-last-child(2){
+            background-color: yellowgreen;
+          }
+          .boxes::before{
+            content: "hello";
+            color: aqua;
+          }
+          .boxes::after{
+            content: "Bye";
+            color:yellowgreen;
+          }
+          p::selection{
+            color:orange;
+            background-color: yellow;
+          }
+          input::placeholder{
+            color:red;
+          }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">1</div>
+        <div data-color="primary" class="box">2</div>
+        <div data-color="primary" class="box">3</div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, totam est. Nam accusantium sapiente quae cum assumenda praesentium porro velit, est ipsa placeat.</p>
+    <input type="text" placeholder="hello">
+</body>
+</html>
