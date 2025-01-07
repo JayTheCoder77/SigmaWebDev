@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css transitions</title>
+</head>
+<style>
+    .container {
+        background-color: aqua;
+        width: 50vw;
+        height: 40vh;
+    }
+
+    .box {
+        background-color: blueviolet;
+        width: 5vw;
+        height: 5vh;
+        /* animation-name: move;
+        animation-duration: 2s;
+        animation-iteration-count:4;
+        animation-timing-function:cubic-bezier(0, 0.01, 0, 0.97);
+        animation-delay: 3s;
+        /* animation-direction:alternate-reverse; */
+        /* animation-play-state: paused;  */
+        animation: move 3s ease-in-out 2s infinite alternate-reverse,
+            lol 3s ease-in-out 2s infinite alternate-reverse;
+        ;
+        /* shorthand */
+    }
+
+    @keyframes move {
+        from {
+            background-color: red;
+        }
+
+        to {
+            background-color: yellowgreen;
+            transform: translate(500px);
+        }
+    }
+
+    @keyframes lol {
+        0% {
+            transform: rotate(100deg);
+        }
+
+        10% {
+            transform: rotate(100deg);
+        }
+
+        50% {
+            transform: rotate(100deg);
+        }
+
+        70% {
+            transform: rotate(100deg);
+        }
+
+        100% {
+            transform: rotate(100deg);
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+
+</html>
